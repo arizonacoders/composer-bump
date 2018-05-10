@@ -1,0 +1,37 @@
+{
+    "name": "arizona-coders/composer-bump",
+    "type": "composer-plugin",
+    "description": "A simple composer plugin that will bump, tag, and push the code for you",
+    "license": "GPL v3",
+    "authors": [
+       {
+           "name": "Jeff Ahern",
+           "email": "jeff@arizonacoders.com"
+       }
+    ],
+    "require": {
+        "php": "^5.6||^7.0"
+    },
+    "require-dev": {
+        "composer/composer": "^1.2",
+        "squizlabs/php_codesniffer": "^3",
+        "phpunit/phpunit": "^5",
+        "sensiolabs/security-checker" : "^3"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArizonaCoders\\Infrastructure\\Composer\\Plugin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ArizonaCoders\\Infrastructure\\Composer\\Plugin\\": "tests/"
+        }
+    },
+    "config": {
+        "bin-dir": "vendor/bin/"
+    },
+    "extra": {
+        "class": "ArizonaCoders\\Infrastructure\\Composer\\Plugin"
+    }
+}
