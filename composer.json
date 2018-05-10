@@ -2,7 +2,7 @@
     "name": "arizona-coders/composer-bump",
     "type": "composer-plugin",
     "description": "A simple composer plugin that will bump, tag, and push the code for you",
-    "license": "GPL v3",
+    "license": "GPL-3.0",
     "authors": [
        {
            "name": "Jeff Ahern",
